@@ -1,0 +1,17 @@
+called: /usr/bin/gcc
+	/home/robw/dl/work/internal_apps/sagalabels/build-linux
+	gcc
+	../src/main.cpp
+	-I../src
+	-I../res
+	-I/home/robw/tools/wxWidgets-3.0.2/build-release/lib/wx/include/gtk2-unicode-static-3.0
+	-I/home/robw/tools/wxWidgets-3.0.2/include
+	-D_FILE_OFFSET_BITS=64
+	-D__WXGTK__
+	-pthread
+	-c
+	-Wall
+	-g
+	-o
+	main.o
+

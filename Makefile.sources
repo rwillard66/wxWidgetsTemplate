@@ -1,0 +1,31 @@
+# This file includes several variables for source inclusion. They are included
+# in the main Makefile for each operating system, so all changes will propagate
+# throughout the platforms.
+
+# relative location of source files: default = ../src
+SRCLOC = ../src
+
+# relative location of resources (ie. image files): default = ../res
+RESLOC = ../res
+
+# source files to be compiled
+SRC= main.cpp \
+	formclass.cpp \
+	frmMain.cpp
+
+# enable the following line if you have integrated graphics to include
+#SRC += images.cpp
+
+# Virtual Path entries
+VPATH=../src \
+	../res \
+
+# Source include directories
+INCL= -I../src \
+	-I../res \
+
+# target name for application
+TARGET=myappname
+
+# version number in M.m format
+VER=1.0
